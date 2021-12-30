@@ -1,0 +1,10 @@
+// // Import Variables
+@use "../helpers/variables" as *;
+// Import Mixins
+@use "../helpers/mixins";
+
+.games-cards-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}

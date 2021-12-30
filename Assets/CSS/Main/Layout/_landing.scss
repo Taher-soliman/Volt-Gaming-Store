@@ -1,0 +1,155 @@
+// Import Variables
+@use "../helpers/variables" as *;
+// Import Mixins
+@use "../helpers/mixins";
+
+.page-content {
+  padding-top: 65px;
+  width: $page-content-width;
+
+  .landing {
+    width: 100%;
+    padding-top: 40px;
+    .recommended {
+      padding-right: 20px;
+
+      .banner-holder {
+        .banner {
+          background-image: url(../../Images/games-imgs/Ghost-runner.jpg);
+          min-height: 300px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 15px;
+          overflow: hidden;
+
+          .overlay {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+              to right,
+              rgba(0, 0, 0, 0.5) 40%,
+              rgba(255, 255, 255, 0.1)
+            );
+          }
+          .text-content {
+            color: $very-light-gray;
+            padding: 10px 25px 25px;
+            width: 50%;
+
+            .description {
+              font-size: $font-sm;
+              font-weight: 500;
+            }
+            .info {
+              margin-bottom: 10px;
+            }
+            .info .price,
+            .version {
+              color: $white;
+            }
+            .play-now {
+              background-color: $dark-orange;
+              color: $white;
+              border-radius: 10px;
+              font-size: 16px;
+              padding: 8px 15px;
+              margin-bottom: 10px;
+              cursor: pointer;
+            }
+          }
+          .fav-icon {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            background-color: rgb(0 0 0 / 30%);
+            cursor: pointer;
+            &:hover .icon {
+              color: $dark-orange;
+            }
+            .icon {
+              color: $white;
+              transition: $transition;
+            }
+          }
+        }
+      }
+    }
+    > div {
+      .section-title {
+        font-size: $font-md;
+        font-weight: 600;
+        color: $light-brown;
+        margin-bottom: 20px;
+      }
+      .banner-holder {
+        padding: 10px;
+        background-color: $white;
+        border-radius: 15px;
+      }
+      .info .stars {
+        font-size: $font-sm;
+        color: $very-light-gray;
+      }
+      .info .stars span {
+        color: $light-orange;
+      }
+      .info .price {
+        font-size: $font-sm;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+      .trending {
+        .banner-holder {
+          .img {
+            background-image: url(../../Images/games-imgs/Wireframe-guides.jpg);
+            min-height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+            overflow: hidden;
+          }
+          .text-content {
+            padding-left: 10px;
+            p {
+              margin-bottom: 20px;
+            }
+            .game-name {
+              font-size: $font-lg;
+            }
+            .game-name,
+            .info .price {
+              color: $brown;
+            }
+            .description {
+              font-size: $font-sm;
+              color: $light-brown;
+            }
+            .info {
+              .stars {
+                color: $light-brown;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .popular {
+    .heading {
+      margin-bottom: 10px;
+
+      .view-all {
+        font-size: $font-md;
+        font-weight: 600;
+        color: $light-orange;
+        cursor: pointer;
+      }
+    }
+  }
+}

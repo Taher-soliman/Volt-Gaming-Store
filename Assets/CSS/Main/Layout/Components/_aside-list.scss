@@ -1,0 +1,84 @@
+// Import Vsrisbles
+@use "../../helpers/variables" as *;
+aside {
+  height: calc(100% - 65px);
+  overflow-y: scroll;
+  width: $aside-width;
+  background-color: $white;
+  left: 0;
+  bottom: 0;
+
+  .nav-pages {
+    position: relative;
+    width: 90%;
+
+    > div {
+      margin-top: 20px;
+    }
+
+    .pages-list {
+      .title {
+        padding-left: 30px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $light-brown;
+        letter-spacing: 0.06rem;
+        margin-bottom: 5px;
+      }
+
+      .pages {
+        li {
+          padding: 5px 0;
+          padding-left: 30px;
+          cursor: pointer;
+          transition: $transition;
+
+          &:hover {
+            position: relative;
+            background-color: rgb(255 153 0 / 15%);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            span {
+              color: $dark-orange;
+            }
+          }
+
+          span {
+            display: inline-block;
+            margin-right: 20px;
+            color: $light-brown;
+            transition: $transition;
+          }
+
+          span.text {
+            font-size: $font-sm;
+          }
+        }
+      }
+    }
+
+    .active-page {
+      position: relative;
+      background-color: rgb(255 153 0 / 10%);
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 5px 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-right: 5px solid $dark-orange;
+        top: 0;
+        right: 98%;
+        border-radius: 5px;
+      }
+
+      span {
+        color: $dark-orange !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Assets/Images/gamepad-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/CSS/Vendores/all.min.css" />
+    <link rel="stylesheet" href="Assets/CSS/Main/style.css">
+    <title>Volt Home SASS</title> 
+  </head>
+  <body class="d-flex jc-fe">
+    <!-- Start Navigation Section -->
+    <nav class="pos-re d-flex dir-d-flex jc-sb">
+      <!-- Start Nav Bar -->
+      <div class="nav-bar pos-fi z-i-100" id="nav-bar">
+          <div class="d-flex jc-sb">
+            <div class="header d-flex al-c jc-fs col-2">
+              <button class="toggle-nav-btn">
+                <span><i class="fas fa-bars"></i></span>
+              </button>
+              <div class="logo">
+                <span class="icon"><i class="fas fa-gamepad"></i></span>
+                <span class="text">VOLT</span>
+              </div>
+            </div>
+            <div class="search col-7">
+              <div class="search-content">
+                <form class="d-flex al-c">
+                  <div class="search-input d-flex al-c jc-fs dir-d-flex col-10">
+                    <i
+                      class="fa-solid fa-magnifying-glass search-icon"
+                      title="Search"
+                    ></i>
+                    <input class="" type="text " required placeholder="Search" />
+                  </div>
+                  <button type="submit" title="Search With Your Voice">
+                    <i class="fa-solid fa-microphone"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="nav-icons d-flex js-fe al-c">
+              <span class="msgs-icon icon">
+                <i class="fas fa-comment-dots"></i>
+              </span>
+              <span class="notf-icon icon"><i class="fas fa-bell"></i></span>
+              <span class="profile-icon">
+                <img src="Assets/Images/avatar.png" alt="Profile Image" />
+              </span>
+            </div>
+          </div>
+      </div>
+      <!-- End Nav Bar -->
+
+      
+    </nav>
+    <!-- End Navigation Section -->
+
+   <div class="page-content pos-re d-flex jc-fe">
+     <!-- Start Fixed List -->
+     <aside class="pos-fi z-i-90">
+      <div class="nav-pages">
+        <div class="home pages-list ">
+
+          <ul class="pages">
+            <li class="active-page">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="text">Home</span>
+            </li>
+
+          </ul>
+        </div>
+        <div class="account pages-list">
+          <p class="title">ACCOUNT</p>
+          <ul class="pages">
+            <li>
+              <span class="icon"><i class="far fa-user-circle"></i></span>
+              <span class="text">Profile</span>
+            </li>
+            <li >
+              <span class="icon"><i class="far fa-heart"></i></span>
+              <span class="text">Favourites</span>
+            </li>
+            <li>
+              <span class="icon"><i class="far fa-comments"></i></span>
+              <span class="text">Chats</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-user-friends"></i></span>
+              <span class="text">Friends</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-wallet"></i></span>
+              <span class="text">Wallet</span>
+            </li>
+          </ul>
+        </div>
+        <div class="main pages-list">
+          <p class="title">MAIN</p>
+          <ul class="pages">
+            <li>
+              <span class="icon"><i class="fas fa-gamepad"></i></span>
+              <span class="text">Store</span>
+            </li>
+            <li >
+              <span class="icon"><i class="fas fa-cart-arrow-down"></i></span>
+              <span class="text">Market</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-video"></i></span>
+              <span class="text">Streams</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-users"></i></span>
+              <span class="text">Community</span>
+            </li>
+
+
+        </div>
+        <div class="support pages-list">
+          <p class="title">SUPPORT</p>
+          <ul class="pages">
+            <li>
+              <span class="icon"><i class="fas fa-exclamation-circle"></i></span>
+              <span class="text">Report</span>
+            </li>
+            <li >
+              <span class="icon"><i class="far fa-question-circle"></i></span>
+              <span class="text">Help</span>
+            </li>
+
+
+
+        </div>
+      </div>
+    </aside>
+    <!-- End Fixed List -->
+
+      <!-- Start Landing Section -->
+    <div class="landing section">
+      <div class="container">
+        <div class="d-flex">
+          <div class="recommended col-8">
+            <p class="section-title">Recomended & Featured</p>
+            <div class="banner-holder ">
+              <div class="banner d-flex al-fe pos-re item">
+                <div class="overlay pos-ab z-i-0"></div>
+                <span class="fav-icon" title="Add To Favourites">
+                  <i class="far fa-heart icon"></i>
+                </span>
+                <div class="text-content z-i-10">
+                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a obcaecati dolore, necessitatibus sunt possimus. Numquam.</p>
+                <div class="info">
+                  <span class="stars">4.3 <span> <i class="fas fa-star"></i></span></span>
+                  <span class="price">$14 USD</span>
+                </div>
+                <button class="play-now d-block">Play Now</button>
+                <span class="version icon">
+                  <i class="fab fa-windows"></i>
+                </span>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+          <div class="trending col-4">
+            <p class="section-title">Trinding Now</p>
+            <div class="banner-holder">
+              <div class="banner  d-flex dir-row al-c">
+                <div class="img col-5"></div>
+                <div class="text-content col-7">
+                  <p class="game-name">WarFrame</p>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quae doloremque.        </p>
+                <div class="info">
+                  <span class="stars">4.3 <span> <i class="fas fa-star"></i></span></span>
+                  <span class="price">Free</span>
+                </div>
+                <div class="about pos-re">
+                  <span class="version ">
+                    <i class="fab fa-windows icon"></i>
+                  </span>
+                  <span class="friends" title="Frinds Playing This Game">
+                    <span class="person-1">                    <img src="Assets/Images/Avatar-2.jpg" alt="" >
+                    </span>
+                    <span class="person-2">                    <img src="Assets/Images/Avatar-4.jpg" alt="" >
+                    </span>
+                  </span>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing Section -->
+
+    <!-- Start  Popular Section-->
+    <div class="popular section">
+      <div class="container">
+        <div class="d-flex">
+          <div class="heading d-flex jc-sb al-c">
+            <span class="section-title">Most Popular</span>
+            <span class="view-all">View All</span>
+          </div>
+          <div class="games-cards-holder ">
+            <div class="game-card ">
+              <div class="card-content">
+                <div class="game-img">
+                  <img src="Assets/Images/games-imgs/Hell-is-other-demones.jpeg" alt="">
+                </div>
+                <div class="text-content">
+                  <p class="game-name">Hell is other demons</p>
+                <div class="categories">
+                  <span class="feature">Shooter</span>
+                  .
+                  <span class="feature">Platformer</span>
+                </div>
+                <span class="info">
+                  <span class="stars">4.3 <span> <i class="fas fa-star"></i></span></span>
+                    <span class="price">$6.99 USD</span>
+                </span>
+                <div class="about">
+                  <div class="version">
+                    <span>
+                      <i class="fab fa-windows"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-apple"></i>
+                    </span>
+                    <div class="friends">
+                      <span class="person-1">
+                        <img src="Assets/Images/Avatar-2.jpg" alt="">
+                      </span>
+                      <span class="person-2">
+                        <img src="Assets/Images/Avatar-1.jpg" alt="">
+                      </span>
+                      <span class="person-3">
+                        <img src="Assets/Images/Avatar-3.jpg" alt="">
+                      </span>
+                      <span class="person-4">
+                        <img src="Assets/Images/Avatar-4.jpg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+            </div>
+            <div class="game-card ">
+              <div class="card-content">
+                <div class="game-img">
+                  <img src="Assets/Images/games-imgs/Curse-of-the-dead-godes.jpeg" alt="">
+                </div>
+                <div class="text-content">
+                  <p class="game-name">Curse of the Dead Gods</p>
+                <div class="categories">
+                  <span class="feature">Action</span>
+                  .
+                  <span class="feature">Adventure</span>
+                </div>
+                <span class="info">
+                  <span class="stars">4.8 <span> <i class="fas fa-star"></i></span></span>
+                    <span class="price">$12.99 USD</span>
+                </span>
+                <div class="about">
+                  <div class="version">
+                    <span>
+                      <i class="fab fa-windows"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-apple"></i>
+                    </span>
+                    <div class="friends">
+                      <span class="person-2">
+                        <img src="Assets/Images/Avatar-1.jpg" alt="">
+                      </span>
+                      <span class="person-3">
+                        <img src="Assets/Images/Avatar-3.jpg" alt="">
+                      </span>
+                      <span class="person-4">
+                        <img src="Assets/Images/Avatar-4.jpg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+            </div>
+            <div class="game-card ">
+              <div class="card-content">
+                <div class="game-img">
+                  <img src="Assets/Images/games-imgs/pubg-avatar.jpg" alt="">
+                </div>
+                <div class="text-content">
+                  <p class="game-name">PUBG MOBILE</p>
+                <div class="categories">
+                  <span class="feature">Action</span>
+                  .
+                  <span class="feature">Shooter</span>
+                </div>
+                <span class="info">
+                  <span class="stars">4.4 <span> <i class="fas fa-star"></i></span></span>
+                    <span class="price">$12.99 USD</span>
+                </span>
+                <div class="about">
+                  <div class="version">
+                    <span>
+                      <i class="fab fa-windows"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-apple"></i>
+                    </span>
+                    <div class="friends">
+                      <span class="person-2">
+                        <img src="Assets/Images/Avatar-1.jpg" alt="">
+                      </span>
+                      <span class="person-3">
+                        <img src="Assets/Images/Avatar-3.jpg" alt="">
+                      </span>
+                      <span class="person-4">
+                        <img src="Assets/Images/Avatar-4.jpg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+            </div>
+            <div class="game-card ">
+              <div class="card-content">
+                <div class="game-img">
+                  <img src="Assets/Images/games-imgs/58cc5f1836fb4d210b3980591eaa06d4.jpg" alt="">
+                </div>
+                <div class="text-content">
+                  <p class="game-name">Witcher Hunter</p>
+                <div class="categories">
+                  <span class="feature">Action</span>
+                  .
+                  <span class="feature">Survival</span>
+                </div>
+                <span class="info">
+                  <span class="stars">4.6 <span> <i class="fas fa-star"></i></span></span>
+                    <span class="price">$9.99 USD</span>
+                </span>
+                <div class="about">
+                  <div class="version">
+                    <span>
+                      <i class="fab fa-windows"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-apple"></i>
+                    </span>
+                    <div class="friends">
+                      <span class="person-2">
+                        <img src="Assets/Images/Avatar-1.jpg" alt="">
+                      </span>
+                      <span class="person-3">
+                        <img src="Assets/Images/Avatar-3.jpg" alt="">
+                      </span>
+                      <span class="person-4">
+                        <img src="Assets/Images/Avatar-4.jpg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End  Popular Section-->
+   </div>
+
+   <script src="Assets/Js/Vendores/jquery-3.6.0.min.js"></script>
+   <script src="Assets/Js/Vendores/owl.carousel.min.js"></script>
+    <script src="Assets/Js/Vendores/all.min.js"></script>
+    <script src="Assets/Js/Vendores/bootstrap.bundle.min.js"></script>
+    <script src="Assets/Js/Main/Main.js"></script>
+  </body>
+</html>

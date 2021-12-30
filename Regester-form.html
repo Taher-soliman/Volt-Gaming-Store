@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesowme CSS File -->
+    <link rel="stylesheet" href="Assets/CSS/Vendores/all.min.css" />
+    <!-- Main Style CSS File -->
+    <link rel="stylesheet" href="Assets/CSS/Main/style.css" />
+    <title>VOLT Login / Signup</title>
+  </head>
+  <body>
+    <!-- Start Main Form  -->
+    <div class="form-holder">
+      <div class="overlay pos-ab z-i-0"></div>
+      <div class="container">
+        <div class="form-content d-flex d-flex jc-se pos-re z-i-10">
+          <div class="logo d-flex col-6 d-flex jc-c dir-col pos-re z-i-10">
+            <span class="logo__name">
+              <span class="icon">
+                <i class="fas fa-gamepad"></i>
+              </span>
+              VOLT</span
+            >
+
+            <div class="logo__text">
+              <p>Join <b>VOLT</b> now and play mightly Games!</p>
+            </div>
+          </div>
+          <div class="form login-form col-4">
+            <div class="social-icons">
+              <a href="https://www.google.com/" target="blank">
+                <img
+                  src="Assets/Images/google-logo.png"
+                  alt="Login With Google Account"
+                />
+              </a>
+              <a href="https://www.facebook.com/" target="blank">
+                <img
+                  src="Assets/Images/facebook-new.png"
+                  alt="Login With facebook Account"
+                />
+              </a>
+              <a href="https://www.twitter.com/" target="blank">
+                <img
+                  src="Assets/Images/twitter--v1.png"
+                  alt="Login WithT= twitter Account"
+                />
+              </a>
+            </div>
+            <div class="or-with">
+              <span></span>
+              <p>Or With Email</p>
+              <span></span>
+            </div>
+            <form class="d-flex dir-col" action="">
+              <input type="text" required placeholder="Username" />
+              <div class="pass pos-re">
+                <span id="hide-pass" class="icon d-none">
+                  <i
+                    class="far fa-eye-slash pass-show"
+                    title="hide password"
+                  ></i>
+                </span>
+                <span id="show-pass" class="icon">
+                  <i class="far fa-eye show-pass" title="show password"></i>
+                </span>
+
+                <input type="password" required placeholder="Password" />
+              </div>
+              <button class="login-btn" type="submit">Login</button>
+              <p>Forgot Password?</p>
+            </form>
+            <hr />
+            <div class="regester-p">
+              Don't have an Account? <span class="open-signup">Regester</span>
+            </div>
+          </div>
+          <div class="form signup-form d-none col-4">
+            <div class="social-icons">
+              <a href="https://www.google.com/" target="blank">
+                <img
+                  src="Assets/Images/google-logo.png"
+                  alt="Login With Google Account"
+                />
+              </a>
+              <a href="https://www.facebook.com/" target="blank">
+                <img
+                  src="Assets/Images/facebook-new.png"
+                  alt="Login With facebook Account"
+                />
+              </a>
+              <a href="https://www.twitter.com/" target="blank">
+                <img
+                  src="Assets/Images/twitter--v1.png"
+                  alt="Login WithT= twitter Account"
+                />
+              </a>
+            </div>
+            <div class="or-with">
+              <span></span>
+              <p>Or With Email</p>
+              <span></span>
+            </div>
+            <form class="d-flex dir-col" action="">
+              <input type="email" required placeholder="Email" />
+              <input type="text" required placeholder="Username" />
+              <div class="pass-re pos-re">
+                <span id="hide-pass-re" class="icon d-none">
+                  <i
+                    class="far fa-eye-slash pass-show"
+                    title="hide password"
+                  ></i>
+                </span>
+                <span id="show-pass-re" class="icon">
+                  <i class="far fa-eye show-pass" title="show password"></i>
+                </span>
+
+                <input type="password" required placeholder="Password" />
+              </div>
+              <button class="login-btn" type="submit">Regester</button>
+            </form>
+            <hr />
+            <div class="log-p">
+              Alredy have an Account? <span class="open-signup">Login</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Form  -->
+
+    <!-- Link Bootstrap JS File -->
+    <script src="Assets/Js/Vendores/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome JS File -->
+    <script src="Assets/Js/Vendores/all.min.js"></script>
+    <!-- Link Form JS File -->
+    <script src="Assets/Js/Main/Regester-form-script.js"></script>
+  </body>
+</html>
