@@ -1,3 +1,4 @@
+@import "mixins";
 /// Normal Theme Colors
 $dark-orange: #f46119;
 $light-gray: #f5f5f5;
@@ -31,6 +32,9 @@ $font-family: "Poppins", sans-serif;
 // Width Of Aside & Page Content
 
 $aside-width: 220px;
+
 $page-content-width: calc(100% - 220px);
+$mobile-aside-width: 180px;
+$mobile-content-width: calc(100% - 180px);
 $activate-aside-width: 70px;
 $activate-page-content-width: calc(100% - 70px);

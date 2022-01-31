@@ -7,6 +7,9 @@
   padding-top: 65px;
   // left: $aside-width;
   width: $page-content-width;
+  @include breakpoint-down(small) {
+    width: $mobile-content-width;
+  }
   transition: all $transition ease;
   .landing {
     width: 100%;

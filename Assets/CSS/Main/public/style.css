@@ -387,6 +387,12 @@ nav .nav-bar .header .logo {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  nav .nav-bar .header .logo {
+    display: none !important;
+  }
+}
+
 nav .nav-bar .header .logo span.icon {
   color: #f46119;
 }
@@ -744,6 +750,12 @@ nav .sticky-nav {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  .page-content {
+    width: calc(100% - 180px);
+  }
+}
+
 .page-content .landing {
   width: 100%;
   padding-top: 40px;
@@ -908,8 +920,18 @@ nav .sticky-nav {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  #sidebar {
+    width: 180px;
+  }
+}
+
 #sidebar.toggle-activate {
   width: 70px;
+}
+
+#sidebar.toggle-activate.mobile-mode {
+  position: absolute;
 }
 
 #sidebar.toggle-activate .nav-pages .pages-list .title {

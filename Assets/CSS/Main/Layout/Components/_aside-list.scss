@@ -3,6 +3,9 @@
 #sidebar {
   height: calc(100% - 61px);
   width: $aside-width;
+  @include breakpoint-down(small) {
+    width: $mobile-aside-width;
+  }
   background-color: $white;
   left: 0;
   bottom: 0;
@@ -10,7 +13,9 @@
 
   &.toggle-activate {
     width: $activate-aside-width;
-
+    &.mobile-mode {
+      position: absolute;
+    }
     .nav-pages {
       // overflow-y: scroll;
       .pages-list {

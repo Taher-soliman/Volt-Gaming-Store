@@ -17,10 +17,10 @@ sideBarBtn.addEventListener("click", () => {
 });
 //Try Media
 
-setInterval(() => {
-  console.log(window.innerWidth);
-  console.log(window.innerWidth > 991);
-}, 2000);
+// setInterval(() => {
+//   console.log(window.innerWidth);
+//   console.log(window.innerWidth > 991);
+// }, 2000);
 // Trigger Sticky Nav Bar
 window.addEventListener("scroll", function () {
   let nav = document.querySelector("#nav-bar");
@@ -30,8 +30,8 @@ window.addEventListener("scroll", function () {
 function checkMopile() {
   if (window.innerWidth < 991) {
     sideBar.classList.add("toggle-activate");
-    console.log("mobile");
-  } else console.log("not mobile");
+    pageContent.classList.add("activated-aside");
+  }
 }
 checkMopile();
 // Trigger Owl Carusel For Banner
