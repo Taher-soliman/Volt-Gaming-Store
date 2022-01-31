@@ -13,7 +13,7 @@ $breakpoints-down: (
 }
 
 /// How To Use
-/// @include breakpoint-down(medium){
+/// @include breakpoint-down(medium){ => max-width 991px
 ///     min-height: 25rem;
 ///    background-position: center 70%;
 ///   }

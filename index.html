@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="Assets/Images/gamepad-solid.svg" type="image/x-icon">
+    <!-- Font Awesome  -->
     <link rel="stylesheet" href="Assets/CSS/Vendores/all.min.css" />
-    <link rel="stylesheet" href="Assets/CSS/Main/style.css">
+    <!-- Owl Carusel CSS Files -->
+    <link rel="stylesheet" href="Assets/CSS/Vendores/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assets/CSS/Vendores/owl.theme.default.min.css">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="Assets/CSS/Main/public/style.css">
     <title>Volt Home SASS</title> 
-  </head>
+  </head> 
   <body class="d-flex jc-fe">
     <!-- Start Navigation Section -->
     <nav class="pos-re d-flex dir-d-flex jc-sb">
       <!-- Start Nav Bar -->
       <div class="nav-bar pos-fi z-i-100" id="nav-bar">
           <div class="d-flex jc-sb">
-            <div class="header d-flex al-c jc-fs col-2">
+            <div class="header d-flex al-c jc-fs col-lg-2">
               <button class="toggle-nav-btn">
                 <span><i class="fas fa-bars"></i></span>
               </button>
@@ -24,7 +29,7 @@
                 <span class="text">VOLT</span>
               </div>
             </div>
-            <div class="search col-7">
+            <div class="search ">
               <div class="search-content">
                 <form class="d-flex al-c">
                   <div class="search-input d-flex al-c jc-fs dir-d-flex col-10">
@@ -59,7 +64,7 @@
 
    <div class="page-content pos-re d-flex jc-fe">
      <!-- Start Fixed List -->
-     <aside class="pos-fi z-i-90">
+     <aside id="sidebar" class="pos-fi z-i-90">
       <div class="nav-pages">
         <div class="home pages-list ">
 
@@ -67,6 +72,7 @@
             <li class="active-page">
               <span class="icon"><i class="fas fa-home"></i></span>
               <span class="text">Home</span>
+              <span class="lable">Home</span>
             </li>
 
           </ul>
@@ -77,22 +83,27 @@
             <li>
               <span class="icon"><i class="far fa-user-circle"></i></span>
               <span class="text">Profile</span>
+              <span class="lable">Profile</span>
             </li>
             <li >
               <span class="icon"><i class="far fa-heart"></i></span>
               <span class="text">Favourites</span>
+              <span class="lable">Favourites</span>
             </li>
             <li>
               <span class="icon"><i class="far fa-comments"></i></span>
               <span class="text">Chats</span>
+              <span class="lable">Chats</span>
             </li>
             <li>
               <span class="icon"><i class="fas fa-user-friends"></i></span>
               <span class="text">Friends</span>
+              <span class="lable">Friends</span>
             </li>
             <li>
               <span class="icon"><i class="fas fa-wallet"></i></span>
               <span class="text">Wallet</span>
+              <span class="lable">Wallet</span>
             </li>
           </ul>
         </div>
@@ -102,20 +113,24 @@
             <li>
               <span class="icon"><i class="fas fa-gamepad"></i></span>
               <span class="text">Store</span>
+              <span class="lable">Store</span>
             </li>
             <li >
               <span class="icon"><i class="fas fa-cart-arrow-down"></i></span>
               <span class="text">Market</span>
+              <span class="lable">Market</span>
             </li>
             <li>
               <span class="icon"><i class="fas fa-video"></i></span>
               <span class="text">Streams</span>
+              <span class="lable">Streams</span>
             </li>
             <li>
               <span class="icon"><i class="fas fa-users"></i></span>
               <span class="text">Community</span>
+              <span class="lable">Community</span>
             </li>
-
+            </ul>
 
         </div>
         <div class="support pages-list">
@@ -124,10 +139,12 @@
             <li>
               <span class="icon"><i class="fas fa-exclamation-circle"></i></span>
               <span class="text">Report</span>
+              <span class="lable">Report</span>
             </li>
             <li >
               <span class="icon"><i class="far fa-question-circle"></i></span>
               <span class="text">Help</span>
+              <span class="lable">Help</span>
             </li>
 
 
@@ -141,10 +158,10 @@
     <div class="landing section">
       <div class="container">
         <div class="d-flex">
-          <div class="recommended col-8">
+          <div class="recommended col-8 col-md-12">
             <p class="section-title">Recomended & Featured</p>
-            <div class="banner-holder ">
-              <div class="banner d-flex al-fe pos-re item">
+            <div class="banner-holder  ">
+              <div class="banner item d-flex al-fe pos-re item">
                 <div class="overlay pos-ab z-i-0"></div>
                 <span class="fav-icon" title="Add To Favourites">
                   <i class="far fa-heart icon"></i>
@@ -162,10 +179,10 @@
                 </div>
 
               </div>
-              
+
             </div>
           </div>
-          <div class="trending col-4">
+          <div class="trending col-4 col-md-12">
             <p class="section-title">Trinding Now</p>
             <div class="banner-holder">
               <div class="banner  d-flex dir-row al-c">
@@ -201,8 +218,8 @@
     <!-- Start  Popular Section-->
     <div class="popular section">
       <div class="container">
-        <div class="d-flex">
-          <div class="heading d-flex jc-sb al-c">
+        <div class="">
+          <div class="heading d-flex jc-sb">
             <span class="section-title">Most Popular</span>
             <span class="view-all">View All</span>
           </div>
@@ -213,16 +230,16 @@
                   <img src="Assets/Images/games-imgs/Hell-is-other-demones.jpeg" alt="">
                 </div>
                 <div class="text-content">
-                  <p class="game-name">Hell is other demons</p>
+                  <p class="game-name"><a href="#">Hell is other demons</a></p>
                 <div class="categories">
                   <span class="feature">Shooter</span>
                   .
                   <span class="feature">Platformer</span>
                 </div>
-                <span class="info">
+                <div class="info">
                   <span class="stars">4.3 <span> <i class="fas fa-star"></i></span></span>
                     <span class="price">$6.99 USD</span>
-                </span>
+                </div>
                 <div class="about">
                   <div class="version">
                     <span>
@@ -257,16 +274,16 @@
                   <img src="Assets/Images/games-imgs/Curse-of-the-dead-godes.jpeg" alt="">
                 </div>
                 <div class="text-content">
-                  <p class="game-name">Curse of the Dead Gods</p>
+                  <p class="game-name"><a href="#">Curse of the Dead Gods</a></p>
                 <div class="categories">
                   <span class="feature">Action</span>
                   .
                   <span class="feature">Adventure</span>
                 </div>
-                <span class="info">
+                <div class="info">
                   <span class="stars">4.8 <span> <i class="fas fa-star"></i></span></span>
                     <span class="price">$12.99 USD</span>
-                </span>
+                </div>
                 <div class="about">
                   <div class="version">
                     <span>
@@ -298,16 +315,16 @@
                   <img src="Assets/Images/games-imgs/pubg-avatar.jpg" alt="">
                 </div>
                 <div class="text-content">
-                  <p class="game-name">PUBG MOBILE</p>
+                  <p class="game-name"><a href="#">PUBG MOBILE</a></p>
                 <div class="categories">
                   <span class="feature">Action</span>
                   .
                   <span class="feature">Shooter</span>
                 </div>
-                <span class="info">
+                <div class="info">
                   <span class="stars">4.4 <span> <i class="fas fa-star"></i></span></span>
                     <span class="price">$12.99 USD</span>
-                </span>
+                </div>
                 <div class="about">
                   <div class="version">
                     <span>
@@ -339,16 +356,16 @@
                   <img src="Assets/Images/games-imgs/58cc5f1836fb4d210b3980591eaa06d4.jpg" alt="">
                 </div>
                 <div class="text-content">
-                  <p class="game-name">Witcher Hunter</p>
+                  <p class="game-name"><a href="#">Witcher Hunter</a></p>
                 <div class="categories">
                   <span class="feature">Action</span>
                   .
                   <span class="feature">Survival</span>
                 </div>
-                <span class="info">
+                <div class="info">
                   <span class="stars">4.6 <span> <i class="fas fa-star"></i></span></span>
                     <span class="price">$9.99 USD</span>
-                </span>
+                </div>
                 <div class="about">
                   <div class="version">
                     <span>
@@ -382,10 +399,13 @@
     <!-- End  Popular Section-->
    </div>
 
+   <!-- JQuery -->
    <script src="Assets/Js/Vendores/jquery-3.6.0.min.js"></script>
+   <!-- Owl Carusel -->
    <script src="Assets/Js/Vendores/owl.carousel.min.js"></script>
+   <!-- Font Awesome -->
     <script src="Assets/Js/Vendores/all.min.js"></script>
-    <script src="Assets/Js/Vendores/bootstrap.bundle.min.js"></script>
+    <!-- Main Js File -->
     <script src="Assets/Js/Main/Main.js"></script>
   </body>
 </html>

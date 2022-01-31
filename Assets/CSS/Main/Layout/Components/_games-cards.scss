@@ -1,10 +1,71 @@
-// // Import Variables
-@use "../helpers/variables" as *;
+// Import Variables
+@use "../../helpers/variables" as *;
 // Import Mixins
-@use "../helpers/mixins";
+@use "../../helpers/mixins" as *;
 
 .games-cards-holder {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+  .game-card {
+    background-color: $white;
+    padding: 10px;
+    border-radius: 10px;
+    .game-img {
+      overflow: hidden;
+      min-height: 200px;
+      border-radius: 25px;
+      img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+    .text-content {
+      position: relative;
+      padding: 0 10px;
+
+      .game-name {
+        font-weight: 600;
+        font-size: $font-md;
+        color: $brown;
+        margin: 15px 0 0;
+      }
+      .categories {
+        font-size: $font-xl;
+        color: $brown;
+
+        span {
+          font-size: $font-sm;
+          font-weight: 600;
+          color: $light-brown;
+        }
+      }
+      .info {
+        .stars {
+          color: $light-brown;
+          font-size: $font-sm;
+
+          span {
+            color: $light-orange;
+          }
+        }
+        .price {
+          color: $brown;
+          font-size: $font-sm;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+      }
+      .about {
+        position: relative;
+        margin-top: 10px;
+        .version {
+          span {
+            color: $brown;
+          }
+        }
+      }
+    }
+  }
 }

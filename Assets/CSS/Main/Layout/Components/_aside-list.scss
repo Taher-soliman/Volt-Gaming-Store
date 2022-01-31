@@ -1,23 +1,54 @@
 // Import Vsrisbles
 @use "../../helpers/variables" as *;
-aside {
-  height: calc(100% - 65px);
-  overflow-y: scroll;
+#sidebar {
+  height: calc(100% - 61px);
   width: $aside-width;
   background-color: $white;
   left: 0;
   bottom: 0;
+  transition: all $transition ease;
+
+  &.toggle-activate {
+    width: $activate-aside-width;
+
+    .nav-pages {
+      // overflow-y: scroll;
+      .pages-list {
+        .title {
+          transition: all $transition ease;
+          opacity: 0;
+        }
+        .pages {
+          li {
+            padding-left: 20px;
+            span.text {
+              transition: all $transition ease;
+
+              opacity: 0;
+            }
+            &:hover {
+              .lable {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
   .nav-pages {
     position: relative;
     width: 90%;
 
     > div {
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
     .pages-list {
       .title {
+        position: relative;
+
         padding-left: 30px;
         font-size: 18px;
         font-weight: 600;
@@ -28,31 +59,58 @@ aside {
 
       .pages {
         li {
-          padding: 5px 0;
+          padding: 3px 0;
           padding-left: 30px;
           cursor: pointer;
           transition: $transition;
+          position: relative;
+
+          .lable {
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            position: absolute;
+            z-index: 1000;
+            left: 100%;
+            top: 0;
+            font-size: $font-sm;
+            text-align: center;
+            transform: translate(0%, -50%);
+            background-color: $white;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            transition: 0s;
+            opacity: 0;
+            pointer-events: none;
+          }
 
           &:hover {
             position: relative;
-            background-color: rgb(255 153 0 / 15%);
+            background-color: rgba(255, 153, 0, 0.15);
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
 
             span {
               color: $dark-orange;
             }
+
+            .lable {
+              transition: all 0.5s ease;
+              top: 50%;
+              opacity: 0;
+            }
           }
 
           span {
             display: inline-block;
-            margin-right: 20px;
+            margin-right: 10px;
             color: $light-brown;
             transition: $transition;
           }
 
           span.text {
             font-size: $font-sm;
+            position: absolute;
           }
         }
       }
@@ -60,7 +118,7 @@ aside {
 
     .active-page {
       position: relative;
-      background-color: rgb(255 153 0 / 10%);
+      background-color: rgba(255, 153, 0, 0.1);
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
       padding: 5px 30px;

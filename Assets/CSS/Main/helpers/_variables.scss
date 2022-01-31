@@ -30,5 +30,7 @@ $font-family: "Poppins", sans-serif;
 
 // Width Of Aside & Page Content
 
-$aside-width: 15%;
-$page-content-width: 100% - $aside-width;
+$aside-width: 220px;
+$page-content-width: calc(100% - 220px);
+$activate-aside-width: 70px;
+$activate-page-content-width: calc(100% - 70px);

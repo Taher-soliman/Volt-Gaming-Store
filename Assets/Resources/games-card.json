@@ -1,0 +1,10 @@
+[
+      {
+            image:'Assets/Images/games-imgs/Hell-is-other-demones.jpeg',
+            name:'Hell is other demons',
+            category:['Shooter','Platformer'],
+            stars:4.3,
+            price:'$6.99',
+            version:['windows','apple']
+      }
+]

@@ -1,15 +1,20 @@
 // Import Variables
-@use "helpers/variables" as *;
+@import "helpers/variables";
 // Import Mixins
-@use "helpers/mixins" as *;
+@import "helpers/mixins";
 // Import Global Rules
-@use "Layout/global-rules";
-// Import Nav Bar
-@use "Layout/nav-bar";
-// Import Pages
-@use "pages/regester";
-@use "Layout/landing";
+@import "Layout/global-rules";
+// Import Layout Files
+// NavBar
+@import "Layout/nav-bar";
+// Sections
+@import "Layout/sections";
+// Regester
+@import "pages/regester";
+// Landing
+@import "Layout/landing";
 // Import Components
-@use "Layout/Components/aside-list";
-
-@use "Layout/Components/games-cards";
+// Aside List
+@import "Layout/Components/aside-list";
+// Games Card
+@import "Layout/Components/games-cards";

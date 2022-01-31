@@ -33,12 +33,16 @@ body {
 ul {
   list-style: none;
 }
-
+a {
+  text-decoration: none;
+  color: unset;
+}
 // Spacing & Container
 .container {
   width: 100%;
   max-width: 95%;
   margin: 0 auto;
+  position: relative;
 
   &.p-x {
     padding: {
@@ -71,6 +75,22 @@ ul {
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: percentage($i / 12);
+  }
+}
+///Creat Bootstrab Grid For Medium Screen 991px
+@include breakpoint-down(medium) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: percentage($i / 12);
+    }
+  }
+}
+///Creat Bootstrab Grid For Small Screen 767px
+@include breakpoint-down(small) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: percentage($i / 12);
+    }
   }
 }
 
